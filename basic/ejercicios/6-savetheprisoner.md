@@ -25,3 +25,20 @@ saveThePrisoner tiene los siguientes parametros:
 > Ejemplo input: 5, 2, 1 output: 2
 > Ejemplo input: 7, 19, 2 output: 6
 > Ejemplo input: 3, 7, 3 output: 3
+
+
+function saveThePrisoner(n,m,s){
+    let prisionero= s;
+    let golosina = m;
+    
+
+    while(prisionero!= n && golosina != 0){
+        golosina--;
+        prisionero++;
+        
+    }
+
+    return prisionero-1;
+}
+
+console.log(saveThePrisoner(7,19,2));

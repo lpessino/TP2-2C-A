@@ -1,3 +1,4 @@
+
 ### Problema
 
 Dos gatos y un raton estan posicionados en una linea recta. Se proporcionará sus respectivas posiciones iniciales. 
@@ -24,3 +25,23 @@ Desarrollar una funcion catAndMouse que devuelve una respuesta de la siguente fo
 > ![](https://s3.amazonaws.com/hr-challenge-images/0/1480434557-601bef86ba-cat1.png)
 > 
 > Output Mouse C
+
+//x = catA
+//y = catB
+//z = MouseC
+function catAndMouse(x,y,z){
+    if(x > y){
+        console.log("Cat A wins!");
+    } else {
+        if(y > x){
+            console.log("Cat B wins!");
+        } else {
+            console.log("Mouse C wins!");
+        }
+    }
+}
+
+//catAndMouse(3,10,20);
+//catAndMouse(10,10,20);
+catAndMouse(10,0,20);
+
